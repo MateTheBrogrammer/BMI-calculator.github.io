@@ -1,0 +1,126 @@
+$bgColor: #43675e;
+$cardBgColor: #84a98c;
+$txtColor: white;
+$sideColor: #2f3e46;
+
+$titleFontSize: 32px;
+$bolderFW: bolder;
+$labelFS: 18px;
+$inputFS: 18px;
+
+
+body {
+    background-color: $bgColor;
+    color: $txtColor;
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-size: $titleFontSize;
+    font-weight: $bolderFW;
+    font-family: sans-serif;
+
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+.card {
+    padding: 40px 50px;
+    max-width: 50%;
+    background-color: $cardBgColor;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    -webkit-box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.2); 
+    box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.119);
+    
+    #height {
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+    
+    input {
+        padding: 5px;
+        outline: none;
+        text-align: center;
+        font-size: $inputFS;
+        font-weight: $bolderFW;
+        color: #43675e;
+        border: 2px solid #43675e;
+        border-radius: 5px;
+        caret-color: #43675e;
+        max-width: 70%;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        appearance: none;
+        margin: 0;
+    }
+
+    label {
+        font-size: $labelFS;
+        font-weight: $bolderFW;
+    }
+
+    .btn {
+        padding: 15px 50px;
+        width: 70%;
+        min-width: none;
+        max-width: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 70px;
+        background-color: #84a98c;
+        transition: background-color 0.4s ease; 
+        transition: color 0.4s ease;
+        border-radius: 5px;
+        font-weight: $bolderFW;
+        font-size: 18px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.2); 
+        box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.119);
+    }
+
+    .resultCard {
+        padding: 20px 25px;
+        max-width: 100%;
+        background-color: #84a98c;
+        color: white;
+        -webkit-box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.2); 
+        box-shadow: 0px 0px 50px 9px rgba(255, 255, 255, 0.119);
+        border-radius: 15px;
+        position: absolute;
+        left: 50%;
+        top: 330px;
+        transform: translateX(-50%);
+    }
+
+    .result {
+        max-width: 350px;
+    }
+
+    span {
+        font-weight: bolder;
+    }
+}
+
+@media (min-width: 600px) {
+    .result {
+        width: 400px; 
+    }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./STYLE/style.css">
+    <title>BMI calculator</title>
+</head>
+<body>
+    <p class="title">BMI Calculator</p>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="insideContent">
+                <label for="weight" class="weightLabel">Weight:</label>
+                <input type="number" name="num" min="0" id="weight" class="input"  autocomplete="off">
+                <br>
+                <br>
+                <label for="height" class="heightLabel">Height:</label>
+                <input type="number" name="num" min="0"  id="height" class="input"  autocomplete="off">
+                <br>
+                <button class="btn" id="btn"> Calculate  </button>
+            </div>
+    
+    
+            <div class="resultCard">
+                <p class="result"> Your Body Mass Index is <span id="bmiResult">___</span>. This is considered <span id="healthStatus"> ____.</span> </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="function.js"></script>
+</body>
+</html>
